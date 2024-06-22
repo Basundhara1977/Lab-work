@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    </head>
+<body bgcolor="navyblue">  
+    <form action="College.html" method="post">
+        <h2>College Registration Form</h2>
+        <table>
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="State">Country</label></td>
+                <td>
+                    <select id="State" name="State" required>
+                        <option value="">Select State</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Navi Mumbai">Navi Mumbai</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">Course of Study</label></td>
+                <td>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Business Administration">Business Administration</option>
+                        <option value="Medical Science">Medical Science</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Course</label></td>
+                <td>
+                    <input type="checkbox" id="Artificial Intelligence" name="Course[]" value="Artificial Intelligence">
+                    <label for="Artificial Intelligence">Artificial Intelligence</label><br>
+                    <input type="checkbox" id="Cloud Computing" name="Course[]" value="Cloud Computing">
+                    <label for="Cloud Computing">Cloud Computing</label><br>
+                    <input type="checkbox" id="IOT" name="Course[]" value="IOT">
+                    <label for="IOT">IOT</label><br>
+                    <input type="checkbox" id="Cyber Security" name="Course[]" value="Cyber Security">
+                    <label for="Cyber Security">Cyber Security</label><br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
